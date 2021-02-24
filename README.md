@@ -17,4 +17,10 @@ I'd like to be able to see my list of my bookmarks.
 - Run the query we have saved in the file 01_create_bookmarks_table.sql
 ```
 
+### Connect to `psql` and create the `bookmark_manager` and `bookmark_manager_test` databases:
+
+### CREATE DATABASE bookmark_manager_test;
+
+## To set up the appropriate tables, connect to each database in `psql` and run the SQL scripts in the `db/migrations` folder in the given order.
+
 ### To view bookmarks, navigate to 'localhost:3000/bookmarks'

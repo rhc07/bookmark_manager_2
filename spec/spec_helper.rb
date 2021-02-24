@@ -1,10 +1,12 @@
-ENV['RACK_ENV'] = 'test'
+ENV['ENVIRONMENT'] = 'test'
+# ENV['RUBY_VERSION'] = '2.7.2'
 
 require File.join(File.dirname(__FILE__), '..', 'app.rb')
 
 require 'capybara'
 require 'rspec'
 require 'capybara/rspec'
+require_relative './setup_test_database.rb'
 # require 'features/web_helpers'
 
 Capybara.app = Bookmark_Manager
@@ -37,6 +39,9 @@ RSpec.configure do |config|
     # ...rather than:
     #     # => "be bigger than 2"
     expectations.include_chain_clauses_in_custom_matcher_descriptions = true
+  end
+  config.before(:each) do
+    setup_test_database
   end
 
   # rspec-mocks config goes here. You can use an alternate test double
