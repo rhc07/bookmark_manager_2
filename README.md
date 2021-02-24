@@ -5,6 +5,12 @@ As a user,
 So that I can access my saved URL's,
 I'd like to be able to see my list of my bookmarks.
 ```
+User story 2
+```
+As a user,
+So I can update my bookmarks,
+I'd like to save a new bookmark to my bookmarks.
+```
 
 ![picture](https://raw.githubusercontent.com/rhc07/bookmark_manager/master/images/Screenshot%202021-02-22%20at%2015.10.18.png)
 
