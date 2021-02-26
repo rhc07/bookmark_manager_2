@@ -9,7 +9,7 @@ User story 2
 ```
 As a user,
 So I can update my bookmarks,
-I'd like to save a new bookmark to my bookmarks.
+I'd like to save a new bookmark to my bookmark manager.
 ```
 
 ![picture](https://raw.githubusercontent.com/rhc07/bookmark_manager/master/images/Screenshot%202021-02-22%20at%2015.10.18.png)
