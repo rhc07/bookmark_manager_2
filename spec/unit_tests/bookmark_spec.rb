@@ -17,8 +17,9 @@ describe Bookmark do
 
   describe '#.create' do
     it 'should add a bookmark to the database' do
-      Bookmark.create(title: 'Yahoo', url: 'www.yahoo.com')
-      expect(Bookmark.all).to include('Yahoo: www.yahoo.com')
+      bookmark = Bookmark.create(title: 'Yahoo', url: 'www.yahoo.com').first
+      expect(bookmark['url']).to eq 'www.yahoo.com'
+      expect(bookmark['title']).to eq 'Yahoo'
     end
   end
 end
