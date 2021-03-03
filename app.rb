@@ -12,9 +12,9 @@ class Bookmark_Manager < Sinatra::Base
         erb :bookmarks
     end
 
-    get '/new' do
-        erb :new
-    end
+    # get '/new' do
+    #     erb :new
+    # end
 
     post '/bookmarks/new' do
         Bookmark.create(title: params[:title],url: params[:url])

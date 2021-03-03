@@ -1,16 +1,10 @@
+<h1>Bookmarks List:</h1>
+
 <ul>
   <% @bookmarks.each do |bookmark| %>
     <li><%= bookmark %></li>
   <% end %>
 </ul>
-
-<form action="/new" method="get">
-<input type="submit" value="Add">
-</form>
-<form action="/" method="get">
-<input type="submit" value="Back">
-</form>
-
 
 <form action='/bookmarks/new' method="post">
 
@@ -18,6 +12,10 @@
 <input type="text" name="url" placeholder="URL"/>
 <input type="submit" value="Submit" />
 
+</form>
+
+<form action="/" method="get">
+<input type="submit" value="Back">
 </form>
 
 <!-- <a href="url">link text</a> -->
