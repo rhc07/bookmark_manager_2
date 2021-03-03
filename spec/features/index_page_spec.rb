@@ -1,6 +1,6 @@
 feature 'displays my bookmarks' do
-    scenario 'Hello World' do 
+    scenario 'clicks through to see all bookmarks' do
         visit('/')
-        expect(page).to have_content 'Hello World!'
+        expect(page).to have_link( href: '/bookmarks')
     end
 end
